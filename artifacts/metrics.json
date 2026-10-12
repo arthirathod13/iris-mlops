@@ -1,0 +1,92 @@
+{
+    "selected_model": "LDA",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": [
+        [
+            10,
+            0,
+            0
+        ],
+        [
+            0,
+            10,
+            0
+        ],
+        [
+            0,
+            0,
+            10
+        ]
+    ],
+    "classes": [
+        "Iris-setosa",
+        "Iris-versicolor",
+        "Iris-virginica"
+    ],
+    "model_comparison": [
+        {
+            "model_name": "Neural Network",
+            "cv_accuracy": 0.975,
+            "test_accuracy": 0.9666666666666667,
+            "precision": 0.9696969696969696,
+            "recall": 0.9666666666666667,
+            "f1_score": 0.9665831244778613,
+            "best_parameters": {
+                "model__activation": "relu",
+                "model__alpha": "0.0001",
+                "model__hidden_layer_sizes": "(100, 50, 25)"
+            }
+        },
+        {
+            "model_name": "LDA",
+            "cv_accuracy": 0.975,
+            "test_accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "best_parameters": {
+                "model__solver": "svd"
+            }
+        },
+        {
+            "model_name": "QDA",
+            "cv_accuracy": 0.975,
+            "test_accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "best_parameters": {
+                "model__reg_param": "0.0"
+            }
+        },
+        {
+            "model_name": "SVM",
+            "cv_accuracy": 0.975,
+            "test_accuracy": 0.9333333333333333,
+            "precision": 0.9333333333333333,
+            "recall": 0.9333333333333333,
+            "f1_score": 0.9333333333333333,
+            "best_parameters": {
+                "model__C": "0.1",
+                "model__gamma": "scale",
+                "model__kernel": "linear"
+            }
+        },
+        {
+            "model_name": "Random Forest",
+            "cv_accuracy": 0.95,
+            "test_accuracy": 0.9,
+            "precision": 0.9023569023569024,
+            "recall": 0.9,
+            "f1_score": 0.8997493734335839,
+            "best_parameters": {
+                "model__max_depth": "None",
+                "model__min_samples_leaf": "1",
+                "model__n_estimators": "100"
+            }
+        }
+    ]
+}
